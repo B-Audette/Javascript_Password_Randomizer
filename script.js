@@ -14,21 +14,21 @@ var uppercase = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var lowercase = "qwertyuiopasdfghklzxcvbnm";
 var specialChar = "~!@#$%&-+=_";
 var number = "0123456789";
-approvedChars = ""
+approvedChars = "";
 
 //generate actual password that will appear in #password input
 function generatePassword() {
 
     var pwLength = prompt("Please pick the length of your password. Select a value between 8 and 128. ");
-    if (pwLength !== null); {
+    if (pwLength !== null) {
       console.log(pwLength);
     }
-    while (pwLength <= 8 || pwLength >= 128) {
+    while (pwLength < 8 || pwLength > 128) {
       alert("Invalid entry. Please try again. :( ");
       var pwLength = prompt("Please pick the length of your password. Select a value between 8 and 128. ");
       console.log(pwLength);
 
-      return pwLength
+      // return pwLength
     }
   // gather pw criteria to generate approvedChars
   pwCriteria()
@@ -36,18 +36,22 @@ function generatePassword() {
   function pwCriteria() {
     uppercasePw = confirm("Use uppercase characters?");
     if (uppercasePw === true) { approvedChars += uppercase
+      console.log(approvedChars);
 
     }
     lowercasePw = confirm("Use lowercase characters?");
     if (lowercasePw === true) { approvedChars += lowercase
+      console.log(approvedChars);
 
     }
     specialCharPw = confirm("Use special characters?");
     if (specialCharPw === true) { approvedChars += specialChar
+      console.log(approvedChars);
 
     }
     numberPw = confirm("Use numbers?");
     if (numberPw === true) { approvedChars += number
+      console.log(approvedChars);
 
     }
     
@@ -60,12 +64,11 @@ function generatePassword() {
   }
   
     
-
   var password = ""
 
  // Looping through each item in the array and alerting the result
   for (var i = 0; i < pwLength ; i++) {
-    password = password + approvedChars[Math.floor(Math.random() * pwLength)];
+    password = password + approvedChars[Math.floor(Math.random() * approvedChars.length)];
     console.log(password)
   }
   return password
