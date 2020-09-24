@@ -6,7 +6,7 @@ This is a simple password generator using html, css, and javascript that prompts
 
 ## Deployment and Repository Links
 
-[Deployment](https://b-audette.github.io/Javascript_Password_Randomizer/)
+[Deployment](https://b-audette.github.io/Javascript_Password_Randomizer)
 
 [Repository](https://github.com/B-Audette/Javascript_Password_Randomizer)
 
