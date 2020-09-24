@@ -33,7 +33,6 @@ function generatePassword() {
   // gather pw criteria to generate approvedChars
   pwCriteria()
   
-
   function pwCriteria() {
     uppercasePw = confirm("Use uppercase characters?");
     if (uppercasePw === true) { approvedChars += uppercase
@@ -60,14 +59,17 @@ function generatePassword() {
    console.log (approvedChars.length)
   }
   
-}    
+    
 
-//   var password = ""
+  var password = ""
 
-//  // Looping through each item in the array and alerting the result
-//   for (var i = 0; i < pwLength ; i++) {
-//   password = password + approvedChars[Math.floor(Math.random() * approvedChars.length)];
-// }
+ // Looping through each item in the array and alerting the result
+  for (var i = 0; i < pwLength ; i++) {
+    password = password + approvedChars[Math.floor(Math.random() * pwLength)];
+    console.log(password)
+  }
+  return password
+}
 
 // Add event listener to generate button action
 generateBtn.addEventListener("click", writePassword);
