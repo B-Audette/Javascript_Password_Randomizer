@@ -11,6 +11,6 @@ This is a simple password generator using html, css, and javascript that prompts
 [Repository](https://github.com/B-Audette/Javascript_Password_Randomizer)
 
 ## Example
-![PW Randomizer front-end](JSPWRandomizer.jpg)
+![JSPWRandomizer](https://user-images.githubusercontent.com/66698741/94207388-21416880-fe8d-11ea-9aed-9c85b19ddfae.JPG)
 
 
